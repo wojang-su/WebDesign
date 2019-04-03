@@ -1,0 +1,38 @@
+.box {width:300px; height:300px; background-color:#000; margin:0 auto;}
+
+/*Box 1 transitions*/
+    .b-1 .box {background-color:red;}
+    .b-1 .box:hover{
+        background-color: blue;
+        transition-duration: 1s;
+    }
+
+/*Box 2 transitions*/
+    .b-2 .box {background-color:#795548;}
+    .b-2 .box:hover{
+        transition-duration: 1s;
+        transform: rotate(135deg);
+    }
+
+/*Box 3 transitions*/
+    .b-3 .box {background-color:#FF7043;}
+    .b-3 .box:hover{
+        transition-duration: 1s;
+        transform: skewX(-20deg);
+    }
+
+
+/*Box 4 transitions*/
+    .b-4 .box {background-color:#00796B;}
+    .b-4 .box:hover{
+        transition-duration: 1s;
+        transform: scale(0.5);
+    }
+
+
+/*Box 5 transitions*/
+    .b-5 .box {background-color:#01579B;}
+    .b-5 .box:hover{
+        transition-duration: 1s;
+        transform: scale(2.0);
+    }

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,600,700');
+
+html, body {margin:0; padding:0;}
+body {font:18px/1.25 'Lato', sans-serif;}
+
+.flex {display:flex; justify-content:flex-end;}
+.flex-center {justify-content:center; align-items:center;}
+
+nav {padding:0 20px;}
+nav ul {list-style:none; margin:0 auto; max-width:800px; padding:0;}
+nav ul.stacked {width:300px;}
+nav ul a {display:block; line-height:60px; white-space:nowrap; text-decoration:none;}
+nav ul.padding a {padding:0 12px;}
+nav ul.margin a{margin:0 12px;}
+
+section[class^="n-"],section[class^="a-"] {margin-bottom:100px;}
+section[class^="b-"] {padding:100px;}

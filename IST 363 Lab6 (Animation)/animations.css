@@ -1,0 +1,71 @@
+@keyframes notorious {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: blue;
+    }
+}
+
+@keyframes secondbox {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(800px)
+    }
+}
+
+@keyframes thirdbox {
+    0% {
+        transform: translateX(0);
+    }
+
+    16.67% {
+        transform: translateX(100px);
+    }
+
+    33.34% {
+        transform: translateX(100px) rotate(45deg);
+    }
+
+    50.01% {
+        transform: translateX(100px) rotate(45deg) scale(1.5);
+    }
+
+    66.68% {
+        transform: translateX(100px) rotate(45deg) scale(1);
+    }
+
+    83.35% {
+        transform: translateX(100px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+body {overflow-x:hidden;}
+.box {width:100px; height:100px; background-color:#000;}
+
+/*a-1 Animation*/
+    .a-1 .box{
+        animation: notorious 3s linear 0s infinite;
+    }
+
+/*a-2 Animation*/
+    .a-2 .box{
+        animation: secondbox 2s linear 0s infinite alternate;
+    }
+
+/*a-3 Animation*/
+    .a-3 .box{
+        animation: thirdbox 5s linear 0s infinite;
+    }

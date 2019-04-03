@@ -1,0 +1,44 @@
+@keyframes thegreatpalegoldenrod{
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(320px);
+    }
+
+    50% {
+        transform: translateX(320px) translateY(-140px);
+    }
+
+    75% {
+        transform: translateY(-140px) translateX(0);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+div {
+    text-align: center;
+    margin: 120px 0;
+}
+
+
+/*Extra Credit Button*/
+.b-1 {
+    background-color: palegoldenrod;
+    color: black;
+    width: 320px;
+    height: 140px;
+    font-size: 30px;
+    font-weight: 700; 
+}
+
+.b-1::before{
+}

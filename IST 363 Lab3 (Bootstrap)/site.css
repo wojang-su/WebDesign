@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:300,400|Roboto+Condensed:300,400,700');
+
+body{
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+.header{
+    background-color: #5E35B1;
+    color: white;
+    align-items: center;
+}
+
+
+.header .twelve-columns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.header h1{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.header h1 span{
+    font-weight: 900;
+}
+
+
+.navigation{
+    display: flex;
+}
+
+.navigation li{
+    margin-left: 20px;
+}
+
+.navigation a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.hero{
+    background-image: url("images/home/hero_cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero .twelve-columns{
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h2{
+    color: #5E35B1;
+    font-size: 7vw;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.hero a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    background-color: #5E35B1;
+    min-width: 280px;
+    height: 2.75rem;
+    line-height: 2.75rem;
+    text-align: center;
+}
+
+.about {
+    padding: 60px 0;
+    background-color: #E2E2E2;
+    text-align: center;
+}
+
+.about h2{
+    color: black;
+    font-size: 3rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0 0 24px;
+    font-weight: 700;
+}
+
+.about-info .row{
+    justify-content: center;
+}
+
+.about p{
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Noto Serif JP', sans-serif;
+    margin: 0 0 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.work {
+    padding: 60px 0;
+    background-color : #5E35B1;
+    color: white;
+}
+
+.work h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    margin: 0 0 24px;
+}
+
+/*emmet*/
+.work-item{
+    text-align: center;
+}
+
+.what-we-do{
+    padding: 60px 0;
+}
+
+.what-we-do h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    margin: 0 0 24px;
+}
+
+.what-we-do-item {
+    text-align: center;
+}
+
+.what-we-do-item i{
+    color: #5E35B1;
+    font-size: 3rem;
+}
+
+.what-we-do-item h3{
+    color: #5E35B1;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.testimonials{
+    padding: 60px 0;
+}
+
+.testimonials-item{
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials h2{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0 0 24px;
+    text-align: center;
+}
+
+.testimonials-image img{
+    border-radius: 50%;
+}
+
+.footer{
+    text-align: center;
+    background-color: #454647;
+    padding: 35px 0;
+    color: white;
+    font-size: 1.125rem;
+    line-height: 21px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .header h1{
+        flex: 1 0 auto;
+    }
+
+    .navigation li{
+        flex: 1 0 auto;
+        text-align: center;
+    }
+    .what-we-do .row {
+        flex-wrap: wrap;
+    }
+    
+    .what-we-do-item {
+        flex-basis: 50%;
+        padding: 20px 0;
+    }
+
+    .work .row{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .work-item{
+        flex-basis: 66.6667%;
+        padding: 10px 0;
+    }
+    .about-info .six-columns{
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .testimonials-item{
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .what-we-do .row {
+        flex-wrap: wrap;
+    }
+    
+    .what-we-do-item {
+        flex-basis: 100%;
+        padding: 20px 0;
+    }
+
+    .work .row{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .work-item{
+        flex-basis: 100%;
+    }
+
+    .header{
+        padding: 12px 0;
+    }
+
+    .header .twelve-columns{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .header h1{
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .navigation{
+        flex-wrap: wrap;
+    }
+
+    .navigation li{
+        flex-basis: 33.3333%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .hero a{
+        width: 100%;
+    }
+
+    .hero h2{
+        font-size: 12vw;
+    }
+
+    .hero span{
+        display: block;
+        text-align: center;
+    }
+
+    .testimonials-item{
+        flex-direction: column;
+    }
+
+    .testimonials img{
+        order:1;
+        justify-content: center;
+        width: 6.375rem;
+        height: 6.375rem;
+    }
+
+    .testimonials-text{
+        order:2;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .about-info .six-columns{
+        flex-basis: 100%;
+        text-align: center;
+    }
+}

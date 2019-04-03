@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab 5</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+    
+    <!-- Your stylesheet for Lab 5 -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html" id="ist363">Lab 5 - CSS Selectors</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="alert alert-info mb-5">
+            <p class="text-center">This real article was written by Chris Coyier over at <a href="https://css-tricks.com/front-end-developer-aware/" target="_blank">CSS-Tricks.com</a>.</p>
+        </div>
+
+        <article class="row">
+            <section class="col-12 col-md-8 col-lg-8">
+                <div class="article-image">
+                    <img src="http://via.placeholder.com/1920x1080/999/ffffff?text=Story%20Image" alt="Large Story Image">
+                </div>
+
+                <div class="article-byline">
+                    By: <span>Chris Coyier</span>
+                </div>
+
+                <div class="article-content">
+                    <p>One idea that has lodged itself into my brain recently (largely from <a href="http://shoptalkshow.com/episodes/193-the-state-of-front-end-dev-ala-rebroadcast/">this panel discussion</a>) is how a front end developer needs to be <em>aware</em>. In a general sense, the front end developer is positioned in the middle of lots of other jobs. Everybody involved in a web team ends up talking with the front end developers. That makes sense. The front end developers create <em>the actual thing</em> people interact with. Everything comes together with the front end developer. Perhaps that's why it's such a fun job!</p>
+
+                    <p>Because the front end developer is this central hub position and dealing with lots of different people doing lots of different jobs, the job can be <em>done better</em> if they are <em>aware</em>. Aware of everything else that makes a website tick.</p>
+
+                    <blockquote>
+                        <h3>I'm on interstitial blockquote thrown on the page to break up content</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, qui praesentium! Iste, a, repellendus? Fugiat enim veniam non esse aut, sint, provident dolores tempore tempora, architecto aliquid. Vel, quibusdam expedita?</p>
+                    </blockquote>
+
+                    <p class="aware">A front end developer is aware of design.<br /> If they aren't a designer themselves, they know how important design is. They have good taste in design. They know about the tools involved. They know where the design role fits into the process.</p>
+                    
+                    <p class="aware">A front end developer is aware of the back end.<br /> If they aren't a back end coder themselves, they know how important the back end is. They know what the back end is capable of delivering and what it isn't. They know the responsibilities back end developers have. They know the languages involved. They know how to ask for what they need on the front end. </p>
+                    
+                    <p class="aware">A front end developer is aware of the network.<br /> They know that websites are delivered over the internet, a network, and that that network is a wild and sometimes unpredictable place. They know networks can be on or off, fast or slow, and reliable or unreliable. </p>
+                    
+                    <p class="aware">A front end developer is aware of performance.<br /> If they aren't entirely performance focused themselves, they know that performance is vital to a website's success. They know performance is a complex world onto itself. They know there are quick wins and long term struggles. They know that so long as the back end is fast, the other 80% of the time a website is loading is a front end concern.</p>
+                    
+                    <p class="aware">A front end developer is aware of content strategy.<br /> If they aren't a content strategist themselves, they know that websites live and die by the content on them. They know that the lack of a content plan can cause problems that you may not be able to develop your way out of. They know that the people that use the website is what matters and those people need to find what they need and expect it to be in good shape.</p>
+                    
+                    <p class="aware">A front end developer is aware of databases.<br /> The content lives there. The content must be in good shape. The front end developer can only work with what comes out of those databases. The front end developer needs to combine what comes out of those databases with templates to make the website happen.</p>
+                    
+                    <p class="aware">A front end developer is aware of testing.<br /> So many kinds! Integration testing. Regression testing. User testing! </p>
+                    
+                    <p class="aware">A front end developer is aware of systems.<br /> They might be responsible for implementing a design system, or an icon system, or a coding style guide. They might have to create those systems themselves. They might need to document those systems.</p>
+                    
+                    <p class="aware">A front end developer is aware of devops.<br /> They are writing and committing code along with every other coder on the project, so they need to adhere to the same setup as everyone else. If they didn't write the build system themselves, they know what it is, what it does, and what it is capable of. If they didn't set up deployment themselves, they know how to use it.</p>
+                    
+                    <p class="aware">A front end developer is aware of servers.<br /> Without them, there is no website. </p>
+                    
+                    <p class="aware">A front end developer is aware of accessibility.<br /> If they aren't well versed in building for accessibility themselves, they know that it's important. They know how to test for it. They know who to talk to about it. They know there is quick wins and long term struggles regarding it.</p>
+                    
+                    <p class="aware">A front end developer is aware of the device landscape.<br /> They know the web is everywhere these days and a good website needs to meet users there. Big screens, little screens, touch screens, far away screens, black and white screens. The front end developer is aware of the unknown.</p>
+
+                    <blockquote>
+                        <h3>What's this? Another blockquote?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, qui praesentium! Iste, a, repellendus? Fugiat enim veniam non esse aut, sint, provident dolores tempore tempora, architecto aliquid. Vel, quibusdam expedita?</p>
+                    </blockquote>
+                    
+                    <hr>
+                    
+                    <p>That's just a handful of the things a great front end developer should be aware of. The more the better.</p>
+                    
+                    <p>All this, of course, on top of their own direct job. HTML, CSS, JavaScript, responsive design, libraries and frameworks, communication... this list is scary-long itself!</p>
+                </div>
+            </section>
+
+            <aside class="col-12 col-md-4 col-lg-4 bg-light">
+                <h5>Related</h5>
+                
+                <ul>
+                    <li>
+                        <a href="http://ischool.syr.edu">Vestibulum faucibus magna nec erat feugiat maximus</a>
+                        <p>October 4, 2017</p>
+                    </li>
+                    <li>
+                        <a href="http://syr.edu">Proin ultricies urna vel eros iaculis mattis</a>
+                        <p>October 2, 2017</p>
+                    </li>
+                    <li>
+                        <a href="#">Nam bibendum ipsum egestas malesuada accumsan</a>
+                        <p>October 1, 2017</p>
+                    </li>
+                    <li>
+                        <a href="#">Nullam rutrum quam cursus suscipit lacinia</a>
+                        <p>September 29, 2018</p>
+                    </li>
+                </ul>
+
+                <div class="story-ad">
+                    <img src="http://via.placeholder.com/300x500/999/ffffff?text=Story%20Ad" alt="Story Advertisement" />
+                </div>
+            </aside>
+        </article>
+    </div>
+</body>
+</html>

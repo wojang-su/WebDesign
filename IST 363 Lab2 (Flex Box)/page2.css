@@ -1,0 +1,46 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    background-color: lightcoral;
+    height: 100px;
+}
+
+.content{
+    display: flex;
+    background-color: white;
+    flex: 1 0 auto;
+    flex-direction: row;
+}
+
+.item{
+    margin: 10px;
+    flex-basis: auto;
+    border: 1px solid gray;
+    outline-color: gray;
+    outline-width: medium;
+}
+
+.left{
+    background-color: lightgray;
+    flex: 0 1 75%;
+}
+
+.sidebar{
+    background-color: lightgray;
+    flex: 0 1 25%;
+}
+
+.footer{
+    background-color: #444;
+    height: 200px;
+}
+

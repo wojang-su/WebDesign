@@ -1,0 +1,113 @@
+body {padding-top:40px;}
+img {max-width:100%; display:inline-block; vertical-align:middle;}
+
+#ist363 {
+    border: 2px solid transparent;
+    padding: 4px 8px;
+}
+
+#ist363:hover{
+    border-color: #fff;
+}
+
+.article-byline{
+    background-color: #f0f0f0;
+    padding: 12px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 12px 0;
+    text-align: right;
+}
+
+.aware::first-line{
+    font-size: 1.4em;
+    color: #717A7A;
+    font-weight: bold;
+}
+
+/* : sudo class :: sudo element */
+
+blockquote {
+    padding: 24px;
+    font-style: italic;
+    color: #fff;
+    border-radius: 4px;
+}
+
+blockquote:first-of-type{
+    background-color: #20c997;
+    border: 6px double #07B07E;
+}
+
+blockquote:last-of-type{
+    background-color: #007bff;
+    border: 6px double #0062E6;
+}
+
+/* : :nth-of-type(), :nth-child() - put number what you want to grab */
+
+.article-content p:last-child{
+    font-size: 0.8em;
+}
+
+aside {
+    padding: 24px;
+}
+
+aside ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+aside li{
+    padding: 20px 12px;
+    border-top: 1px dashed #ccc;
+}
+
+aside li:last-child{
+    border-bottom: 1px dashed #ccc;
+}
+
+aside li:hover{
+    background-color: #f0f0f0;
+}
+
+/* link color - a tag */
+
+aside ul a {
+    color: #dc3545;
+}
+
+aside ul li:first-child a{
+    font-size: 1.8em
+}
+
+aside li:nth-child(2) a{
+    font-size: 1.5em
+}
+
+aside li:nth-child(3) a{
+    font-size: 1.2em
+}
+
+.story-ad{
+    margin-top: 24px;
+    text-align: center;
+}
+
+/* Img is inline-element */
+
+
+a[href="#"] {
+    pointer-events: none;
+}
+
+a[href$="syr.edu"]::after{
+    content: "(Syracuse University)";
+    font-size: 50%;
+    color: #717A7A;
+    margin-left: 10px;
+}
+
+/* $= means exactly ends with ^= means exactly starts with  *= means contains */

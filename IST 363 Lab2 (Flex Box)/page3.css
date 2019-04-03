@@ -1,0 +1,61 @@
+body {font:18px/1.25 'Arial', sans-serif; }
+
+html, body{    
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tweet-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+
+.tweet-item{
+    display: flex;
+    flex: 1 1 25%;
+    margin: 10px;
+    border: 1px solid lightgray;
+    outline-color: lightgray;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.tweet-header{
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+    outline-color: lightgray;
+    align-items: flex-start;
+}
+
+.tweet-header a{
+    align-self: center;
+    margin-left: 10px;
+    text-decoration-line: none;
+    color: black;
+    font-weight: bold;
+}
+
+.tweet-body{
+    order: 1;
+    flex: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: stretch;
+}
+
+.tweet-footer{
+    order: 2;
+    text-align: right;
+    padding-top: 10px;
+    border-top: 1px solid lightgray;
+    outline-color: lightgray;
+}

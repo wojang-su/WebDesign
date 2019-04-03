@@ -1,0 +1,67 @@
+*, *:before, *:after {
+    box-sizing:border-box;
+}
+
+img {
+    max-width:100%;
+    display:inline-block;
+    vertical-align:baseline;
+}
+
+.row {
+    display:flex;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+*[class*="-column"], *[class*="-columns"] {
+    padding:0 12px;
+}
+
+.one-column, .one-columns {
+    flex:0 0 8.3333%;
+}
+
+.two-columns {
+    flex: 0 0 16.6667%;
+}
+
+.three-columns {
+    flex: 0 0 25%;
+}
+
+.four-columns {
+    flex: 0 0 33.3333%;
+}
+
+.five-columns {
+    flex: 0 0 41.6667%;
+}
+
+.six-columns {
+    flex: 0 0 50%;
+}
+
+.seven-columns {
+    flex: 0 0 58.3333%;
+}
+
+.eight-columns {
+    flex: 0 0 66.6667%;
+}
+
+.nine-columns {
+    flex: 0 0 75%;
+}
+
+.ten-columns {
+    flex: 0 0 83.3333%;
+}
+
+.eleven-columns {
+    flex: 0 0 91.6667%;
+}
+
+.twelve-columns {
+    flex: 0 0 100%;
+}
