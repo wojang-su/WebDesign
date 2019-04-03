@@ -1,0 +1,84 @@
+<div class="row">
+    <div class="card col-3 pt-4 mb-3">
+        <div class="text-center">
+            <div class="font-weight-bold">{{ data.list[0].dt * 1000 | date:'EEE h:mm a'}}</div>
+            <h2 class="display-4 pt-2 text-muted mb-0">{{ (9/5) * (data.list[0].main.temp -273) +32 | number:0 }}&deg;F</h2>
+            <div class="d-flex justify-content-center">
+                <img class="align-self-center" ng-src ="{{'https://openweathermap.org/img/w/' + data.list[0].weather[0].icon + '.png'}}" />
+            </div>
+            <div class="text-body mb-5">{{ data.list[0].weather[0].main }}</div>
+        </div>
+    </div>
+    <div class="card col-3 pt-4 mb-3">
+        <div class="text-center">
+            <div class="font-weight-bold">{{ data.list[1].dt * 1000 | date:'EEE h:mm a'}}</div>
+            <h2 class="display-4 pt-2 text-muted mb-0">{{ (9/5) * (data.list[1].main.temp -273) +32 | number:0 }}&deg;F</h2>
+            <div class="d-flex justify-content-center">
+                <img class="align-self-center" ng-src ="{{'https://openweathermap.org/img/w/' + data.list[0].weather[0].icon + '.png'}}" />
+            </div>
+            <div class="text-body mb-5">{{ data.list[1].weather[0].main }}</div>
+        </div>
+    </div>
+    <div class="card col-3 pt-4 mb-3">
+        <div class="text-center">
+            <div class="font-weight-bold">{{ data.list[2].dt * 1000 | date:'EEE h:mm a'}}</div>
+            <h2 class="display-4 pt-2 text-muted mb-0">{{ (9/5) * (data.list[2].main.temp -273) +32 | number:0 }}&deg;F</h2>
+            <div class="d-flex justify-content-center">
+                <img class="align-self-center" ng-src ="{{'https://openweathermap.org/img/w/' + data.list[0].weather[0].icon + '.png'}}" />
+            </div>
+            <div class="text-body mb-5">{{ data.list[2].weather[0].main }}</div>
+        </div>
+    </div>
+    <div class="card col-3 pt-4 mb-3">
+        <div class="text-center">
+            <div class="font-weight-bold">{{ data.list[3].dt * 1000 | date:'EEE h:mm a'}}</div>
+            <h2 class="display-4 pt-2 text-muted mb-0">{{ (9/5) * (data.list[3].main.temp -273) +32 | number:0 }}&deg;F</h2>
+            <div class="d-flex justify-content-center">
+                <img class="align-self-center" ng-src ="{{'https://openweathermap.org/img/w/' + data.list[0].weather[0].icon + '.png'}}" />
+            </div>
+            <div class="text-body mb-5">{{ data.list[3].weather[0].main }}</div>
+        </div>
+    </div>
+    <div class="card col-3 pt-4 mb-3">
+        <div class="text-center">
+            <div class="font-weight-bold">{{ data.list[4].dt * 1000 | date:'EEE h:mm a'}}</div>
+            <h2 class="display-4 pt-2 text-muted mb-0">{{ (9/5) * (data.list[4].main.temp -273) +32 | number:0 }}&deg;F</h2>
+            <div class="d-flex justify-content-center">
+                <img class="align-self-center" ng-src ="{{'https://openweathermap.org/img/w/' + data.list[0].weather[0].icon + '.png'}}" />
+            </div>
+            <div class="text-body mb-5">{{ data.list[4].weather[0].main }}</div>
+        </div>
+    </div>
+    <div class="card col-3 pt-4 mb-3">
+        <div class="text-center">
+            <div class="font-weight-bold">{{ data.list[5].dt * 1000 | date:'EEE h:mm a'}}</div>
+            <h2 class="display-4 pt-2 text-muted mb-0">{{ (9/5) * (data.list[5].main.temp -273) +32 | number:0 }}&deg;F</h2>
+            <div class="d-flex justify-content-center">
+                <img class="align-self-center" ng-src ="{{'https://openweathermap.org/img/w/' + data.list[0].weather[0].icon + '.png'}}" />
+            </div>
+            <div class="text-body mb-5">{{ data.list[5].weather[0].main }}</div>
+        </div>
+    </div>
+    <div class="card col-3 pt-4 mb-3">
+        <div class="text-center">
+            <div class="font-weight-bold">{{ data.list[6].dt * 1000 | date:'EEE h:mm a'}}</div>
+            <h2 class="display-4 pt-2 text-muted mb-0">{{ (9/5) * (data.list[6].main.temp -273) +32 | number:0 }}&deg;F</h2>
+            <div class="d-flex justify-content-center">
+                <img class="align-self-center" ng-src ="{{'https://openweathermap.org/img/w/' + data.list[0].weather[0].icon + '.png'}}" />
+            </div>
+            <div class="text-body mb-5">{{ data.list[6].weather[0].main }}</div>
+        </div>
+    </div>
+    <div class="card col-3 pt-4 mb-3">
+        <div class="text-center">
+            <div class="font-weight-bold">{{ data.list[7].dt * 1000 | date:'EEE h:mm a'}}</div>
+            <h2 class="display-4 pt-2 text-muted mb-0">{{ (9/5) * (data.list[7].main.temp -273) +32 | number:0 }}&deg;F</h2>
+            <div class="d-flex justify-content-center">
+                <img class="align-self-center" ng-src ="{{'https://openweathermap.org/img/w/' + data.list[0].weather[0].icon + '.png'}}" />
+            </div>
+            <div class="text-body mb-5">{{ data.list[7].weather[0].main }}</div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary btn-lg btn-block col-12 mt-5" a ui-sref="currentWeather({ zip })">View Current Weather</button>
+</div>
+

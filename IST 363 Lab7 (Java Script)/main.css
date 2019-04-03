@@ -1,0 +1,12 @@
+.top-row {height:248px;}
+.bottom-row {height:calc(100vh - 248px);}
+.btn-choice i{font-size:15vw;}
+.btn-choice span {font-size:6vw;}
+
+#resetBtn {position:absolute; bottom:12px; right:12px;}
+
+.score-container {border:1px solid #fff; padding:12px; font-size:1.2em; color:#fff; width:200px; height:200px; margin:24px;}
+.score-container > span {font-size:2em;}
+
+#roundResultText {font-size:1.8em;}
+#roundResultPlays {font-size:1.4em;}

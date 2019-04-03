@@ -1,0 +1,13 @@
+<div class="text-center">
+    <h2 class="display-4">
+        {{ data. name }}
+    </h2>
+    <h2 class="display-4 text-muted text-center">
+        {{ (9/5) * (data.main.temp -273) +32 | number:0 }}&deg;F
+    </h1>
+    <img ng-src ="{{'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png'}}" />
+    <div class="text-body mb-5">{{ data.weather[0].main }}</div>
+    <div class="row">
+        <button type="button" class="btn btn-primary btn-lg btn-block col-12 mt-5" a ui-sref="forecastWeather({ zip })">View Weather Forecast</button>
+    </div>
+</div>

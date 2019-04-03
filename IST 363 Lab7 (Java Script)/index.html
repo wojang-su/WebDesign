@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IST 363 Lab 7</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row top-row bg-dark">
+            <div class="col-12 text-center d-flex justify-content-center">
+                <div class="score-container d-flex flex-column justify-content-center">
+                    <div class="font-weight-bold">Player 1</div>
+                    <span id="playerScoreText">0</span>
+                </div>
+
+                <div class="round-result ml-4 mr-4 text-white d-flex flex-column justify-content-center">
+                    <div id="roundResultText"></div>
+                    <div id="roundResultPlays"></div>
+                </div>
+
+                <div class="score-container d-flex flex-column justify-content-center">
+                    <div class="font-weight-bold">Computer</div>
+                    <span id="computerScoreText">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row bottom-row">
+            <button class="btn-choice d-flex flex-column align-items-center justify-content-center col-4 btn btn-lg btn-secondary" data-option="Rock">
+                <i class="fa fa-hand-rock-o"></i>
+                <span>Rock!</span>
+            </button>
+
+            <button class="btn-choice d-flex flex-column align-items-center justify-content-center col-4 btn btn-lg btn-light" data-option="Paper">
+                <i class="fa fa-hand-paper-o"></i>
+                <span>Paper!</span>
+            </button>    
+
+            <button class="btn-choice d-flex flex-column align-items-center justify-content-center col-4 btn btn-lg btn-danger" data-option="Scissors">
+                <i class="fa fa-hand-scissors-o"></i>
+                <span>Scissors!</span>
+            </button>
+        </div>
+
+        <button class="btn btn-sm btn-primary" id="resetBtn">Start Over</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

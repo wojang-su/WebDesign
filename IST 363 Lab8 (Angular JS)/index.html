@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+
+    <style>
+        body {height:100vh;}
+        .container-fluid {flex:1 1 auto;}
+        .container-fluid .row {flex:1 1 auto;}
+        .col-12.col-lg-6 {overflow:auto;}
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+</head>
+<body class="d-flex flex-column" ng-app="todoApp" ng-controller="mainCtrl" >
+    {{ text }}
+    <div class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 py-5">
+                    <form>
+                        <div class="form-group">
+                            <label for="add_new_todo" class="text-light">Add New Todo:</label><br />
+                            <input class="form-control" type="text" ng-model="new_todo" ng-keydown="add_new_todo($event)" placeholder="Enter New Todo" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex">
+        <div class="row">
+            <div class="col-12 col-lg-6 p-4 bg-light border-right">
+                <h4 class="font-weight-normal">Current Todos</h4>
+
+                <p ng-if="(todo_list|filter:{ is_done: false }).length === 0">There are no current todos.</p>
+                
+                <ul class="list-group">
+                    <li class="list-group-item d-flex align-items-center" ng-repeat="todo in todo_list" ng-if="todo.is_done === false">
+                        <span>{{ todo.title }}</span>
+
+                        <button type="button" ng-click="complete_todo(todo)" class="btn btn-success btn-sm ml-auto mr-2">Done</button>
+                        <button type="button" ng-click="delete_todo()" class="btn btn-danger btn-sm">Delete</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-lg-6 p-4">
+                <h4 class="font-weight-normal">Completed Todos</h4>
+
+                <p ng-if="(todo_list|filter:{ is_done: true }).length === 0">There are no completed todos.</p>
+
+                <ul class="list-group">
+                    <li class="list-group-item d-flex align-items-center" ng-repeat="todo in todo_list" ng-if="todo.is_done === true">
+                        <span>{{ todo.title }}</span>
+
+                        <button type="button" ng-click="delete_todo()" class="btn btn-danger btn-sm ml-auto">Delete</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
